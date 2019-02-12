@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/utp_logo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wrap_login"
+        />
+
+    <RelativeLayout
+        android:id="@+id/wrap_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+    <RadioGroup
+        android:id="@+id/btn_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radio_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:checked="true"
+            android:text="@string/radio1" />
+
+        <RadioButton
+            android:id="@+id/radio_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/radio2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_realtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_radio"
+        android:text="@string/button1"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/MyButton"
+        android:background="#e39000"/>
+
+    <Button
+        android:id="@+id/btn_realtime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_realtime"
+        android:text="@string/button2"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/MyButton"
+        android:background="#e38039"/>
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_realtime2"
+        android:text="Instructions"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/MyButton"
+        android:background="#e37555"/>
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_help"
+        android:text="Quiz"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/MyButton"
+        android:background="#e36555"/>
+
+        <Button
+            android:id="@+id/btn_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_quiz"
+            android:text="credits"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:background="#e35555"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_credits" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerInParent="true"
+        android:text="@string/seekbar"
+        android:textColor="@color/colorTransparentWhite"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+
+    <Switch
+        android:id="@+id/switchMainActivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:drawableLeft="@mipmap/ic_launcher_foreground"
+        android:layout_below="@+id/wrap_login"
+        android:checked="false"
+        android:textColor="@color/colorTransparentWhite"
+        android:textOff="NO"
+        android:textOn="YES"/>
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent = "false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wrap_login" >
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_text_title"
+            android:inputType="" />
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_text_message"
+            android:inputType="" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendOnChannel1"
+            android:text="@string/button3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendOnChannel2"
+            android:text="@string/button4" />
+    </RelativeLayout>
+-->
+</RelativeLayout>

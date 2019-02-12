@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BrainQuiz</string>
+    <string name="title_activity_realtime_updates">RealtimeUpdates</string>
+    <string name="txt_credit">CREDIT :</string>
+    <string name="txt_credit_people">"■ Mr. CANDAPPANE Vincent \n■ Mr. UNG Wei Chun \n■ Mr. CHAALI Hicham \n■ Ms. CHAN Yee Ling \n■ Dr. TANG Tong Boon \n■ Prof. FABRICE Meriaudeau \n■ Prof. PATRICK Marquie \n■ Prof. ABDOU Wahabou \n■ CISIR : Centre for Intelligent Signal and Imaging Research"</string>
+
+    //Radio
+    <string name="radio1">Line Graphs</string>
+    <string name="radio2">Bar Graphs</string>
+
+    //Text
+    <string name="edit_text_title">Title</string>
+    <string name="edit_text_message">Message</string>
+
+    //Button
+    <string name="button1">Sensor gyroscope</string>
+    <string name="button2">Brain Measurement - HOT1000</string>
+    <string name="button3">Send on Channel 1</string>
+    <string name="button4">Send on Channel 2</string>
+    <string name="button5">Back to menu</string>
+
+
+    //Seekbar
+    <string name="seekbar">0%</string>
+
+    //Shared Preferences Data
+    <string name="switch_state">utp.esirem.vincent.realtimegraph.switch_state</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_txt">Reading Text Here</string>
+    <string name="txt_title_directions">Directions</string>
+    <string name="txt_directions">Read the following passage to answer the given questions based on it. There is no time limitations. Feel comfortable to read with and without fNIRS portable device. Some words/phrases are printed in bold to help you locate them while answering some of the questions.</string>
+    <string name="title_activity_credit">Credit</string>
+
+
+</resources>

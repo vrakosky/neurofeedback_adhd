@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Start">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/brain_logo_2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        app:cardElevation="4dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnRead"
+            android:layout_margin="8dp"
+            android:background="#31699d"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="READ"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        app:cardElevation="4dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView1">
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnPlay"
+            android:layout_margin="8dp"
+            android:background="#e38039"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="PLAY"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/group"
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switchActivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+
+                android:drawableLeft="@mipmap/ic_launcher_foreground"
+                android:textColor="@color/colorTransparentWhite"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:checked="false" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
