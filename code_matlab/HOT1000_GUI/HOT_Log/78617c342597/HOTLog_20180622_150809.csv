@@ -1,0 +1,7 @@
+#HOT-1000 raw data (C) Hitachi High-Technologies Corporation. 2001-2015. All rights reserved 
+#Raw data export format
+#Ver 1.00
+#
+#Bluetooth Address,78:61:7c:34:25:97
+#
+Device time,Headset time(sec),HbT change(left subtracted),HbT change(right subtracted),Estimated pulse rate,HbT change(left SD1cm),HbT change(left SD3cm),HbT change(right SD1cm),HbT change(right SD3cm),saturation(left SD1cm),saturation(left SD3cm),saturation(right SD1cm),saturation(right SD3cm),noise detection flag,Mark
